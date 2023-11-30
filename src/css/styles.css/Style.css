@@ -1,0 +1,256 @@
+body{
+    margin: 0;
+    background-color:#f5e9ff;
+}
+a{
+    color: #000;
+}
+.header{
+    display:grid;
+    background-color:#fff;
+    margin-top:-20px;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,1);
+    position: absolute;
+    width:100%;
+    z-index: 3;
+}
+.header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color:#fff;
+    justify-self: end;
+}
+
+.header li a{
+    display:grid;
+    border-right: 1px solid black;
+    padding:20px 20px;
+    border-right:1px solid #aaa;
+    text-decoration: none;
+}
+.header .logo{
+    width: 300px;
+    height:150px;
+    justify-self: center;
+    display:grid;
+    padding:10px 20px;
+    overflow:hidden;
+    margin:-60px 0px -50px -60px;
+    
+}
+
+.header li a:hover,
+.header .menu-btn:hover{
+    background-color: #f4f4f4;;
+}
+.header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon{
+    cursor:pointer;
+    float:left;
+    padding:28px 20px;
+    position:relative;
+    user-select: none;
+    
+}
+main{
+    width:100%
+}
+
+.header .menu-icon .nav-icon{
+    background: #333;
+    display:grid;
+    height:2px;
+    position:relative;
+    transition: background .2s ease-out;
+    width:18px;
+    
+}
+
+.header .menu-icon .nav-icon:before{
+    background: #333;
+    content:"";
+    display:block;
+    height:100%;
+    position:absolute;
+    transition: all .2s ease-out;
+    width:100%;
+    top:5px;
+}
+.header  .menu-icon .nav-icon:after {
+    background: #333;
+    content:"";
+    display:grid;
+    height:100%;
+    position:absolute;
+    transition: all .2s ease-out;
+    width:100%;
+    top:-5px;
+}
+
+.header .menu-btn{
+    display:none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 280px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+footer{
+    height:100px;
+    padding:40px;
+    background-color:#1a0841;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+}
+footer a img{
+    width:3rem;
+    height:3rem;
+    background-color: #eccfd1;
+    border-radius: 50%;
+
+}
+
+.follow{
+    margin-left:0px;
+    color:#fff;
+}
+.contact{
+   margin-left:15px;
+   color:#fff;
+   
+}
+.contact a{
+    color:#fff;
+}
+.pp{
+    margin-top:100px;
+    text-align: center;
+    padding-bottom: 120px;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+.pphoto{
+    height:auto;
+    width:80%;
+    margin-top:160px;
+    margin-left:2rem;
+    border-radius: 5px;
+}
+.edu {
+    padding-top : 150px;
+    text-align : center;
+    padding-right : 3rem;
+    padding-left : 3rem;
+}
+.back{
+    margin-top: 0px;
+    padding-top: 30px;
+    text-align: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+}
+.backimg img{
+    height:350px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    width:80%;
+    margin-left:3rem;
+}
+.fun img,.fun video{
+    height:350px;
+    margin-left:2rem;
+    margin-right: 1rem;
+    width:85%;
+    border-radius: 5px;
+    
+}
+.fun figure{
+    padding-top: 150px;
+  
+}
+.fun p{
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    padding-top: 1rem;
+    
+}
+.voice{
+    padding:3rem 3rem;
+}
+.hobby p{
+    padding:3rem 7rem;
+}
+.fun figcaption{
+    margin-top:0px;
+}
+.skill{
+    padding-top:10rem;
+    padding-left:1.5rem;
+    padding-right:3rem;
+    
+    
+}
+
+p{
+    text-align: justify;
+}
+.skill p{
+    margin-right:10%;
+    text-align: center;
+    text-align: justify;
+}
+.skill table{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    text-align: justify;
+}
+#btn{
+    width:6rem;
+    margin-top:1.5rem;
+    margin-left: 9rem;
+}
+
+.quote{
+    padding-bottom: 5rem;
+}
+main{
+    text-align: center;
+}
+
+
+.cont{
+    padding-bottom:27rem;
+}
+
+
+form{
+    display:grid;
+    width:65%;
+    padding:50px;
+    margin-left: 30px;
+
+
+}
+.right,.left{
+    display:grid;
+    height:130px;
+
+}
+form label{
+    padding-bottom: 1rem;
+    margin-top:10px;
+}
