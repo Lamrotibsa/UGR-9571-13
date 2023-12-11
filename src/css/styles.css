@@ -30,7 +30,7 @@ a{
     border-right:1px solid #aaa;
     text-decoration: none;
 }
-.header .logo{
+.header .header_logo{
     width: 300px;
     height:150px;
     justify-self: center;
@@ -42,16 +42,16 @@ a{
 }
 
 .header li a:hover,
-.header .menu-btn:hover{
+.header .header_menu-btn:hover{
     background-color: #f4f4f4;;
 }
-.header .menu{
+.header .header_menu{
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
 }
 
-.header .menu-icon{
+.header .header_menu-icon{
     cursor:pointer;
     float:left;
     padding:28px 20px;
@@ -63,7 +63,7 @@ main{
     width:100%
 }
 
-.header .menu-icon .nav-icon{
+.header .header_menu-icon .header_nav-icon{
     background: #333;
     display:grid;
     height:2px;
@@ -73,7 +73,7 @@ main{
     
 }
 
-.header .menu-icon .nav-icon:before{
+.header .header_menu-icon .header_nav-icon:before{
     background: #333;
     content:"";
     display:block;
@@ -83,7 +83,7 @@ main{
     width:100%;
     top:5px;
 }
-.header  .menu-icon .nav-icon:after {
+.header  .header_menu-icon .header_nav-icon:after {
     background: #333;
     content:"";
     display:grid;
@@ -94,15 +94,15 @@ main{
     top:-5px;
 }
 
-.header .menu-btn{
+.header .header_menu-btn{
     display:none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .header_menu-btn:checked ~ .header_menu {
     max-height: 280px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon {
+.header .header_menu-btn:checked ~ .header_menu-icon .header_nav-icon {
     background: transparent;
 }
 footer{
@@ -121,19 +121,19 @@ footer a img{
 
 }
 
-.follow{
+.footer_follow{
     margin-left:0px;
     color:#fff;
 }
-.contact{
+.footer_contact{
    margin-left:15px;
    color:#fff;
    
 }
-.contact a{
+.footer_contact a{
     color:#fff;
 }
-.pp{
+.main_pp{
     margin-top:100px;
     text-align: center;
     padding-bottom: 120px;
@@ -141,20 +141,20 @@ footer a img{
     padding-right:2rem;
 }
 
-.pphoto{
+.main_pphoto{
     height:auto;
     width:80%;
     margin-top:160px;
     margin-left:2rem;
     border-radius: 5px;
 }
-.edu {
+.main_edu {
     padding-top : 150px;
     text-align : center;
     padding-right : 3rem;
     padding-left : 3rem;
 }
-.back{
+.main_back{
     margin-top: 0px;
     padding-top: 30px;
     text-align: center;
@@ -162,14 +162,14 @@ footer a img{
     padding-left: 3rem;
 
 }
-.backimg img{
+.main_backimg img{
     height:350px;
     padding-top: 80px;
     padding-bottom: 50px;
     width:80%;
     margin-left:3rem;
 }
-.fun img,.fun video{
+.hobby_fun img,.hobby_fun video{
     height:350px;
     margin-left:2rem;
     margin-right: 1rem;
@@ -177,24 +177,24 @@ footer a img{
     border-radius: 5px;
     
 }
-.fun figure{
+.hobby_fun figure{
     padding-top: 150px;
   
 }
-.fun p{
+.hobby_fun p{
     text-align: center;
     margin-left: 2rem;
     margin-right: 3rem;
     padding-top: 1rem;
     
 }
-.voice{
+.hobby_voice{
     padding:3rem 3rem;
 }
 .hobby p{
     padding:3rem 7rem;
 }
-.fun figcaption{
+.hobby_fun figcaption{
     margin-top:0px;
 }
 .skill{
@@ -212,6 +212,7 @@ p{
     margin-right:10%;
     text-align: center;
     text-align: justify;
+    font-family:sans-serif ;
 }
 .skill table{
     padding-top: 3rem;
@@ -245,7 +246,7 @@ form{
 
 
 }
-.right,.left{
+.cont_form_right,.cont_form_left{
     display:grid;
     height:130px;
 
@@ -253,4 +254,275 @@ form{
 form label{
     padding-bottom: 1rem;
     margin-top:10px;
+
 }
+
+
+
+
+@media  only screen and (min-width: 768px) and (max-width:1023px)  {
+      
+    .main_pphoto{
+        height:600px;
+        width:500px;
+    }
+    .main_pp p{
+        text-align: center;
+    }
+    .main_backimg img{
+        height:300px;
+        width:320px;
+    }
+    form{
+        justify-content: center;
+        margin-left:10%;
+    }
+    .cont_form input{
+        width:450px;
+        height:20px;
+            
+    }
+        
+    #btn{
+        margin-left: 40%;
+    }
+    .skill p{
+        padding-left: 20px;
+        font-family:sans-serif ;
+    }
+    table{
+        margin-left:25%;
+    }
+    .hobby_hby img{
+        width:300px;
+        height:300px
+    }
+    .hobby_hby video{
+        width:400px;
+        height:400px;
+    }
+    .hobby_qoute{
+        text-align: center;
+    }
+
+} 
+
+@media only screen and (orientation: landscape) {
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .main_container{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+    
+        }
+        .main_pp{
+            text-align: center;
+            padding-top:40%;
+        }
+        .main_pphoto{
+            height:50%;
+            width:70%;
+            margin-left:15%;
+            margin-bottom: 15%;
+        }
+        .main_backimg{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            padding-bottom:5%;
+        }
+        .main_backimg img{
+            height:350px;
+            width:250px;
+            padding-top:100px;
+        }
+        .cont_form{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .cont_form_right{
+            padding-right:15%;
+        }
+        .cont_form_left{
+            padding-left:15%
+        }
+        #btn{
+            margin-left:40%
+        }
+        table{
+            padding-left:30%
+        }
+        .hobby_hby{
+            display:grid;
+            grid-template-columns: 50% 50%;
+            margin:0;
+        }
+        .hobby_hby img{
+            height:140px;
+            width:100px;
+            margin-left: -35px;
+            
+            
+        }
+        .hobby_hby video{
+            height:140px;
+            width:100px;
+            margin: 0;
+        }
+        .hobby_fun{
+            display:grid;
+            grid-template-columns: 30% 70%;
+            margin:0;
+            width:100%
+        }
+        .hobby_fun p{
+
+            width:140px;
+            margin-right:0;
+            margin-left:-48px;
+            padding-top:80%;
+
+            
+        }
+        .hobby{
+            padding-top:10%;
+            margin-right:0;
+            
+        }
+        body{
+            overflow-x: hidden;
+
+        }
+        *{
+            font-family:sans-serif ;
+
+        }
+        
+    }
+    
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .header_menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .header_menu-icon {
+      display: none;
+    }
+    .main_container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .header .header_logo{
+       justify-self: start;
+    }
+    .main_pp{
+        text-align: center;
+        padding-top:40%;
+    }
+    .main_pphoto{
+        height:70%;
+        width:70%;
+        margin-left:15%;
+        margin-bottom: 15%;
+    }
+    footer{
+        padding-left:10%;
+    }
+    .footer_contact{
+        margin-left:35%;
+    }
+    .footer_follow a{
+        padding:2%;
+    }
+    .footer_follow h2{
+        padding-left: 4%;
+    }
+    .main_edu{
+        text-align: center;
+        padding-left:20%;
+        padding-right:20%;
+    }
+    .main_backimg{
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main_back{
+        padding-top:10%;
+        padding-bottom: 25%;
+    }
+    .cont_form{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 8%;
+    }
+    .main_quote{
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    form{
+        padding-left: 15%;
+        padding-top: 10%;
+    }
+    
+    .cont_form_right{
+        padding-right:20%;
+        
+    }
+    .cont_form_left{
+        padding-left: 20%;
+    }
+    .cont_form input{
+        height:30px;
+    }
+    #btn{
+        margin-left:40%;
+    }
+   .skill h3{
+    padding-right: 25%;
+   }
+   .skill p{
+    padding-top:3%;
+    margin-right: 40%;
+    margin-left:5%;
+    font-family:sans-serif ;
+   }
+   table{
+    margin-left:30%;
+    padding-bottom: 5%;
+   }
+
+   .hobby_hby{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+   }
+   .hobby_fun{
+    padding-top:10%;
+    padding-bottom: 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin:0;
+   }
+   .hobby_fun p{
+    padding-top:70%;
+    width:100px;
+    margin:0;
+   }
+   .hobby_qoute{
+    text-align: center;
+    
+   }
+   body{
+    overflow-x: hidden;
+   }
+}
+
