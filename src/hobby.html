@@ -3,86 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
 </head>
-<body>
+<body class="has-background-danger-light">
+    
     <header>
-        <img src="images/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li>
-                    <a href="hobby.html">Hobby</a>
-                </li>
-            </ul>
+        <nav class="navbar has-shadow is-white">
+            <section class="navbar-brand">
+                <img class="has-ratio navbar-item " width="300" height="150" src="images/logo.jpg" alt="logo" class="is-pulled-left" > 
+                <a class="navbar-burger ml-auto" id="navbar-burger" data-target="nav-links" aria-label="menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </a>
+            </section>
+            <section class="navbar-menu" id="nav-links" >
+                <ul class="navbar-end">
+                    <li class="navbar-item">
+                        <a href="home.html" class="navbar-item">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-item">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-item">Contact</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="skill.html" class="navbar-item">Skill</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="hobby.html" class="navbar-item">Hobby</a>
+                    </li>
+                </ul>
+            </section>
         </nav>
-
     </header>
-
     <main>
-        <article>
-            <figure>
-                <img src="images/travel.jpg" alt="travel">
-                <figcaption><h4>travel</h4></figcaption>
-            </figure>
-            <p>yelabuga , it is a nice and historical place in russia i liked how lovely the peoples are ,and it is a small peaceful city.</p>
+        <section class="columns">
+            <article class="column ml-6 ">
+                <section class="columns">
+                    <figure class="column has-text-centered mt-6 py-6">
+                        <img width="500px" src="images/travel.jpg" alt="travel">
+                        <figcaption class="has-text-centered mb-6 py-6 subtitle"><h4>travel</h4></figcaption>
+                    </figure>
+                    <p class="column has-text-centered ml-6 mr-6 pr-6 mt-6 py-6">yelabuga , it is a nice and historical place in russia i liked how lovely the peoples are ,and it is a small peaceful city.</p>
+                </section>
+                <section class="columns py-6">
+                    <figure class="column has-text-centered mt-6 py-6">
+                        <img width="500px" src="images/bendy.jpg" alt="playing bendy">
+                        <figcaption class="has-text-centered subtitle"><h4>playing</h4></figcaption>
+                            
+                    </figure>
+                    <p class="column has-text-centered ml-6 mr-6 pr-6 mt-6 py-6">i like playing games like tenis and football but playing bendy is my favorite.</p>
+                </section>
+                    
+                
+            </article>
             
-            <figure>
-                <img src="images/bendy.jpg" alt="playing bendy">
-                <figcaption>playing bendy</figcaption>
+            <article class="column">
+                <section class="columns">
+                    <figure class="column has-text-centered mt-6 py-4">
+                        <video width="300px" height="350px" src="images/dancing_with_friends.mp4" controls>
+                            <p >
+                                <a href="images/dancing_with_friends.mp4">dancing with friend</a> 
+                            </p>
+                        </video>
+                              
+                        <figcaption class="has-text-centered subtitle mb-6"><h4>picnic</h4></figcaption>
+                            
+                    </figure>
+                    <p class="column has-text-centered ml-6 mr-6 pr-6 mt-6 py-6 ">it was the day i meet a lot of different type of people ,and they were beautiful and supportive people. </p>
+                </section>
+                <section class="is-desktop columns py-6">
+                    <figure class="column has-text-centered">
+                        <video width="300px" height="300px" src="images/having_fun.mp4" controls>
+                            <p>
+                                <a href="images/having_fun.mp4">having fun</a>
+                            </p>
+                        </video>
+                              
+                        <figcaption class="has-text-centered subtitle mb-6">cheli,russia</figcaption>
+                    </figure>
+                    <p class="column has-text-centered ml-6 mr-6 pr-6 mt-6 py-6">living the moment fully and making memories was the best day in my life.</p>
+                </section>
                 
-            </figure>
-            <p>i like playing games like tenis and football but playing bendy is my favorite.</p>
-        </article>
-        <article>
-            <figure>
-                <video src="images/dancing_with_friends.mp4" controls>
-                    <p>
-                      <a href="images/dancing_with_friends.mp4">dancing with friend</a> 
-                    </p>
-                  </video>
-                  
-                <figcaption><h4>picnic in yelabuga</h4></figcaption>
                 
-            </figure>
-            <p>it was the day i meet a lot of different type of people ,and they were beautiful and supportive people. </p>
-            <figure>
-                <video src="images/having_fun.mp4" controls>
-                    <p>
-                      <a href="images/having_fun.mp4">having fun</a>
-                    </p>
-                  </video>
-                  
-                <figcaption>cheli,russia</figcaption>
-            </figure>
-            <p>living the moment fully and making memories was the best day in my life.</p>
-        </article>
-        <audio src="images/gnossienne-1-erik-satie-175471.mp3" controls>
-        </audio>
-        <p>i love listening to classical music when i study and when i want to relax because it bring me sense of calm.</p>
-    </main>
-    <footer>
-        <section>
-            <h2>Follow me </h2>
-            <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram"></a>
-            <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram"></a>
-            <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp"></a>
+            </article>
+            
         </section>
-        <section>
-            <h2>Contact me </h2>
-            <ul>
-                <li>
-                    Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
+        <p class="has-text-centered mt-6 mb-6">
+            <audio class="has-text-centered mt-6 mb-6" src="images/classic.mp3" controls>
+            </audio >   
+        </p>
+        <p class="has-text-centered ml-6 mb-6 pb-6">i love listening to classical music when i study and when i want to relax because it bring me sense of calm.</p>
+    </main>
+    <footer class="footer columns is-multiline is-mobile is-small mb-0 has-background-grey-darker" >
+        <section class="column">
+            <h2 class="subtitle has-text-white">Follow me </h2>
+            <section class="is-flex">
+                <a href="https://t.me/lamrotibsa" class="image mr-2 is-64x64"><img src="images/telegram_icon.jpg"  alt="telegram" class="is-rounded"></a>
+                <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA==" class="image  mr-3 is-64x64" ><img src="images/instagram_icon.jpg"  alt="instagram" class="is-rounded"></a>
+                <a href="https://wa.me/qr/KHKMWIW6E5X6E1" class="image  mr-3 is-64x64"><img src="images/whatsapp_icon.png" alt="whatsapp" class="is-rounded has-ratio"></a>
+            </section>
+            
+        </section>
+        <section class="column">
+            <h2 class="subtitle has-text-white mr-1">Contact me </h2>
+            <ul  class="has-text-white ml-6">
+                <li >
+                    Email :<a href="mailto:lamrotibsa@gmail.com" class="has-text-white">lamrotibsa@gmail.com</a>
                 </li>
                 <li>
                     Phone :+251983418977
@@ -90,5 +121,16 @@
             </ul>
         </section>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarBurger = document.getElementById('navbar-burger');
+            const navbarMenu = document.getElementById('nav-links');
+
+            navbarBurger.addEventListener('click', function() {
+                navbarBurger.classList.toggle('is-active');
+                navbarMenu.classList.toggle('is-active');
+            });
+        });
+    </script>
 </body>
 </html>

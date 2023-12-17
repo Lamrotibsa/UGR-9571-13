@@ -3,70 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body>
+<body class="has-background-danger-light">
     <header>
-        <img src="images/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li>
-                    <a href="hobby.html">Hobby</a>
-                </li>
-            </ul>
+        <nav class="navbar has-shadow is-white">
+            <section class="navbar-brand">
+                <img class="has-ratio navbar-item " width="300" height="150" src="images/logo.jpg" alt="logo" class="is-pulled-left" > 
+                <a class="navbar-burger ml-auto" id="navbar-burger" data-target="nav-links" aria-label="menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </a>
+            </section>
+            <section class="navbar-menu" id="nav-links" >
+                <ul class="navbar-end">
+                    <li class="navbar-item">
+                        <a href="home.html" class="navbar-item">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-item">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-item">Contact</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="skill.html" class="navbar-item">Skill</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="hobby.html" class="navbar-item">Hobby</a>
+                    </li>
+                </ul>
+            </section>
         </nav>
-
     </header>
-    <main>
-        <section>
-            <h2>Contact me </h2>
-            <ul>
-                <li>
-                    Email :lamrotibsa@gmail.com
-                </li>
-                <li>
-                    Phone :+251983418977
-                </li>
-            </ul>
-        </section>
-        <form>
-            <label>First Name: </label> 
-            <input type="text" id="fname"> 
-            <label>Last Name:</label> 
-            <input type="text" id="lname">
-            <label>Email:</label><br>
-            <input type="email">
-            <label>Phone Number:</label>
-            <input type="number" id="email">
-            <label>Message:</label>
-            <input type="text" id="message">
-            <input type="submit" value="Submit">
-            </form>
-    </main>
+    
 
-    <footer>
-        <section>
-            <h2>Follow me </h2>
-            <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram"></a>
-            <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram"></a>
-            <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp"></a>
+    <main class="">
+        
+        <form class="ml-6 mr-6 mt-6 pt-4" action="#">
+            <section class="columns is-desktop is-centered ml-6 mr-6 pl-6 pr-6 ">
+                <section class=" column is-desktop ml-6 mr-6 mt-6 pt-6 mb-6">
+                    <label class="column has-text-centered is-desktop pl-6 ml-1">First Name: </label> 
+                    <input  class="input  ml-1"  type="text" id="fname" class="f_name" class="column is-desktop"> 
+                    <label class="column has-text-centered is-desktop ml-1 pl-6 pt-6">Last Name:</label>
+                    <input class="input ml-1 "   type="text" id="lname" class="l_name" class="column is-desktop">
+                </section>
+                <section class="is-one-fifth mr-4 ml-4 "></section>
+                <section class="column is-desktop  ml-6 mr-6 mt-6 pt-6 mb-6">
+                    <label class="column has-text-centered">Email:</label>
+                    <input class="input  ml-1"  type="email" id="email" class="email" class="column">
+                    <label class="column has-text-centered mt-6">Phone Number:</label>
+                    <input  class="input ml-1"  type="number input" id="number" class="ph_no" class="column">
+                </section>
+                
+            </section>
+            
+            <section class="has-text-centered">
+                <label class="column has-text-centered ml-6 mb-6">Message:</label>
+                <textarea class="has-text-centered " cols="70" id="mess" rows="6" name="mes" class="msg" class="column ml-6 mr-6 mb-6"></textarea>
+                <section class="has-text-centered">
+                <input class="has-text-centered button mb-6 mt-6" id="btn" type="submit" value="Submit">
+                </section>
+            </section>
+            
+        </form>
+    </main>
+    <footer class="footer columns is-multiline is-mobile is-small mb-0 has-background-grey-darker" >
+        <section class="column">
+            <h2 class="subtitle has-text-white">Follow me </h2>
+            <section class="is-flex">
+                <a href="https://t.me/lamrotibsa" class="image mr-2 is-64x64"><img src="images/telegram_icon.jpg"  alt="telegram" class="is-rounded"></a>
+                <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA==" class="image  mr-3 is-64x64" ><img src="images/instagram_icon.jpg"  alt="instagram" class="is-rounded"></a>
+                <a href="https://wa.me/qr/KHKMWIW6E5X6E1" class="image  mr-3 is-64x64"><img src="images/whatsapp_icon.png" alt="whatsapp" class="is-rounded has-ratio"></a>
+            </section>
+            
         </section>
-        <section>
-            <h2>Contact me </h2>
-            <ul>
-                <li>
-                    Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
+        <section class="column">
+            <h2 class="subtitle has-text-white mr-1">Contact me </h2>
+            <ul  class="has-text-white ml-6">
+                <li >
+                    Email :<a href="mailto:lamrotibsa@gmail.com" class="has-text-white">lamrotibsa@gmail.com</a>
                 </li>
                 <li>
                     Phone :+251983418977
@@ -74,5 +92,17 @@
             </ul>
         </section>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarBurger = document.getElementById('navbar-burger');
+            const navbarMenu = document.getElementById('nav-links');
+
+            navbarBurger.addEventListener('click', function() {
+                navbarBurger.classList.toggle('is-active');
+                navbarMenu.classList.toggle('is-active');
+            });
+        });
+    </script>
+    
 </body>
 </html>

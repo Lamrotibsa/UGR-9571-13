@@ -3,67 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body>
+<body class="has-background-danger-light">
     <header>
-        <img src="images/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li>
-                    <a href="hobby.html">Hobby</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar has-shadow is-white">
+            <section class="navbar-brand">
+                <img class="has-ratio navbar-item " width="300" height="150" src="images/logo.jpg" alt="logo" class="is-pulled-left" > 
+                <a class="navbar-burger ml-auto" id="navbar-burger" data-target="nav-links" aria-label="menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
+                </a>
+            </section>
+            <section class="navbar-menu" id="nav-links" >
+                <ul class="navbar-end">
+                    <li class="navbar-item">
+                        <a href="home.html" class="navbar-item">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-item">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-item">Contact</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="skill.html" class="navbar-item">Skill</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="hobby.html" class="navbar-item">Hobby</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
     </header>
+    
 
     <main>
-        <article>
-            <h2>Hey,it's lamrot</h2>
+    
+        <article class="has-text-centered my-6 mx-6 px-7 pt-5">
+            <h2 class="subtitle has-text-black">Hey,it's lamrot</h2>
 
-            <p>I'am a third-year software engineering student at Addis Ababa University, I have a great passion for IT and technology and it has led me to
+            <p class="has-text-black pb-6 mb-6">I'am a third-year software engineering student at Addis Ababa University, I have a great passion for IT and technology and it has led me to
                  gain interest in Python programming and web development. And , I find joy in coding and have 
                  a particular affinity for crafting websites. </p>
         </article>
-        <section>
-            <h2>educational background</h2>
-            <p>Born in Haramaya and I accomplished my highschool in haramaya University model school, my robust educational foundation reflects a lifelong passion for learning.
-                 From childhood, education has been a driving force in my life. I actively tackle challenges, evident in my adept 
-                 problem-solving skills showcased on platforms like LeetCode. Venturing beyond borders, I pursued an industrial
-                  programming course in Russia. Currently, my focus is on web development, particularly in mastering React. 
-                  These experiences underscore my commitment to ongoing learning and my ambition to contribute meaningfully to
-                   the intersection of education and technology.</p>
+        <section class="columns  pb-6">
+            <section class="column mx-6 my-6 ">
+                <h2 class="subtitle has-text-centered has-text-black">educational background</h2>
+                <p class=" has-text-black">Born in Haramaya and I accomplished my highschool in haramaya University model school, my robust educational foundation reflects a lifelong passion for learning.
+                     From childhood, education has been a driving force in my life. I actively tackle challenges, evident in my adept 
+                     problem-solving skills showcased on platforms like LeetCode. Venturing beyond borders, I pursued an industrial
+                      programming course in Russia. Currently, my focus is on web development, particularly in mastering React. 
+                      These experiences underscore my commitment to ongoing learning and my ambition to contribute meaningfully to
+                       the intersection of education and technology.</p>
+            </section>
+                <img class="image has-ratio" width="600" src="images/book.jpg" alt="book" class="column mx-6 my-6">
         </section>
-            <img src="images/book.jpg" alt="book">
-        <blockquote cite="Martin_Golding">Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
+       
+        <blockquote class="py-6 mb-6 has-text-centered" cite="Martin_Golding">"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live."
 
            </blockquote>
     </main>
 
-    <footer>
-        <section>
-            <h2>Follow me </h2>
-            <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram"></a>
-            <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram"></a>
-            <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp"></a>
+    <footer class="footer columns is-multiline is-mobile is-small mb-0 has-background-grey-darker" >
+        <section class="column">
+            <h2 class="subtitle has-text-white">Follow me </h2>
+            <section class="is-flex">
+                <a href="https://t.me/lamrotibsa" class="image mr-2 is-64x64"><img src="images/telegram_icon.jpg"  alt="telegram" class="is-rounded"></a>
+                <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA==" class="image  mr-3 is-64x64" ><img src="images/instagram_icon.jpg"  alt="instagram" class="is-rounded"></a>
+                <a href="https://wa.me/qr/KHKMWIW6E5X6E1" class="image  mr-3 is-64x64"><img src="images/whatsapp_icon.png" alt="whatsapp" class="is-rounded has-ratio"></a>
+            </section>
+            
         </section>
-        <section>
-            <h2>Contact me </h2>
-            <ul>
-                <li>
-                    Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
+        <section class="column">
+            <h2 class="subtitle has-text-white mr-1">Contact me </h2>
+            <ul  class="has-text-white ml-6">
+                <li >
+                    Email :<a href="mailto:lamrotibsa@gmail.com" class="has-text-white">lamrotibsa@gmail.com</a>
                 </li>
                 <li>
                     Phone :+251983418977
@@ -71,5 +89,16 @@
             </ul>
         </section>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarBurger = document.getElementById('navbar-burger');
+            const navbarMenu = document.getElementById('nav-links');
+
+            navbarBurger.addEventListener('click', function() {
+                navbarBurger.classList.toggle('is-active');
+                navbarMenu.classList.toggle('is-active');
+            });
+        });
+    </script>
 </body>
 </html>
