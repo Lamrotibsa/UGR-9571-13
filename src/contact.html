@@ -49,27 +49,29 @@
                 </li>
             </ul>
         </section>
-        <form >
+        <form class="form" action="#">
             <section class="cont_form">
                 <section class="cont_form_right">
                     <label >First Name: </label> 
-                    <input type="text" id="fname"> 
+                    <input type="text" id="fname" class="f_name"> 
                     <label >Last Name:</label>
-                    <input  type="text" id="lname">
+                    <input  type="text" id="lname" class="l_name">
                 </section>
                 <section class="cont_form_left">
                     <label >Email:</label>
-                    <input  type="email" id="email">
+                    <input  type="email" id="email" class="email">
                     <label >Phone Number:</label>
-                    <input  type="number" id="number">
+                    <input  type="number" id="number" class="ph_no">
                 </section>
             </section>
             
             
             <label>Message:</label>
-            <textarea cols="49" id="mess" rows="5" name="mes"></textarea>
+            <textarea cols="49" id="mess" rows="5" name="mes" class="msg"></textarea>
             <input id="btn" type="submit" value="Submit">
-            </form>
+            
+        
+        </form>
     </main>
 
     <footer>
@@ -91,5 +93,8 @@
             </ul>
         </section>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/javascript.js">
+    </script>
 </body>
 </html>
