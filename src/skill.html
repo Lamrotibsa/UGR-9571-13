@@ -3,35 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
 </head>
-<body>
-    <header>
-        <img src="images/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li>
-                    <a href="hobby.html">Hobby</a>
-                </li>
-            </ul>
+<body class="bg-purple-200">
+    <header class="custom-header bg-white">
+        <nav class="flex justify-end items-center w-92% pt-12">
+            <section class="md:hidden">
+                <ion-icon onclick="onToggleMenu()" name="menu" class="text-3xl cursor-pointer"></ion-icon>
+            </section>
+            <section class="hidden md:flex justify-end items-center space-x-4">
+                <a href="home.html" class="hover:bg-green-100 px-4 py-2">Home</a>
+                <a href="about.html" class="hover:bg-green-100 px-4 py-2">About</a>
+                <a href="contact.html" class="hover:bg-green-100 px-4 py-2">Contact</a>
+                <a href="skill.html" class="hover:bg-green-100 px-4 py-2">Skill</a>
+                <a href="hobby.html" class="hover:bg-green-100 px-4 py-2">Hobby</a>
+            </section>
+            <section id="customMobileMenu" class="md:hidden hidden absolute bg-white max-h-48 w-full top-16 right-0 z-50">
+                <a href="home.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Home</a>
+                <a href="about.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">About</a>
+                <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact</a>
+                <a href="skill.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Skill</a>
+                <a href="hobby.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Hobby</a>
+            </section>
         </nav>
-
     </header>
-
+    
+    <script>
+        function onToggleMenu() {
+            const customMobileMenu = document.getElementById('customMobileMenu');
+            customMobileMenu.classList.toggle('hidden');
+    
+            const mainContent = document.querySelector('main');
+            mainContent.classList.toggle('menu-open');
+        }
+    </script>
     <main>
-        <h3>about my skills</h3>
-        <p>As a dedicated IT enthusiast, I am passionate about exploring a diverse array of subjects within the field. My journey 
+        <h3 class="text-xl text-center pt-12 mt-5">about my skills</h3>
+        <p class="text-center pt-5 px-12 mr-12 pb-10">As a dedicated IT enthusiast, I am passionate about exploring a diverse array of subjects within the field. My journey 
             encompasses a deep dive into databases, where I work using systems like
              MySQL and PostgreSQL. Python serves as my versatile companion, allowing me to navigate through web development, 
              data science, and the realms of algorithmic problem-solving with ease. Armed with a strong understanding of data 
@@ -43,43 +53,49 @@
               me with a versatile skill set, positioning me to tackle complex challenges and contribute meaningfully to 
               the ever-evolving landscape of technology.
             </p>
-            <table>
-                <tr>
-                    <td>phyton</td>
-                    <td><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
-                </tr>
-                <tr>
-                    <td>data structure</td>
-                    <td><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
-                </tr>
-                <tr>
-                    <td>database</td>
-                    <td><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"></td>
-                </tr>
-                   
-                <tr>
-                    <td>web</td>
-                    <td><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
-                </tr>
-                <tr>
-                    <td>Networking</td>
-                    <td><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"></td>
-                </tr>
-
-            </table>
+            <section>
+                <table class="text-center mt-10 mb-12 mx-auto">
+                    <tr>
+                        <td>Phyton</td>
+                        <td class="flex"><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
+                    </tr>
+                    <tr>
+                        <td>Data structure</td>
+                        <td class="flex"><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
+                    </tr>
+                    <tr>
+                        <td>Database</td>
+                        <td class="flex"><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"></td>
+                    </tr>
+                       
+                    <tr>
+                        <td>Web</td>
+                        <td class="flex"><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
+                    </tr>
+                    <tr>
+                        <td>Networking</td>
+                        <td class="flex"><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"></td>
+                    </tr>
+    
+                </table>
+            </section>
+           
 
     </main>
 
-    <footer>
-        <section>
-            <h2>Follow me </h2>
-            <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram"></a>
-            <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram"></a>
-            <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp"></a>
+    <footer class="bg-gray-800 flex px-12 pb-9">
+        <section class="flex-1">
+            <h2 class="text-white text-xl pt-12">Follow me </h2>
+            <section class="flex pt-5">
+                <a href="https://t.me/lamrotibsa"><img class="flex-1 w-12 h-12 mr-3 rounded-t-full rounded-b-full" src="images/telegram_icon.jpg" alt="telegram"></a>
+                <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img class="flex-1 w-12 mr-3 h-12 rounded-t-full rounded-b-full" src="images/instagram_icon.jpg" alt="instagram"></a>
+                <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img class="flex-1 w-12 h-12 rounded-t-full rounded-b-full" src="images/whatsapp_icon.png" alt="whatsapp"></a>
+            </section>
+            
         </section>
-        <section>
-            <h2>Contact me </h2>
-            <ul>
+        <section class="flex-1 pt-12 pl-12 ml-12 ">
+            <h2 class="text-white text-xl">Contact me </h2>
+            <ul class="text-white pl-10 pt-5">
                 <li>
                     Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
                 </li>

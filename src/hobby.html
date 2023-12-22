@@ -3,84 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
-<body>
-    <header>
-        <img src="images/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li>
-                    <a href="hobby.html">Hobby</a>
-                </li>
-            </ul>
+<body class="bg-purple-200">
+    
+    <header class="custom-header bg-white">
+        <nav class="flex justify-end items-center w-92% pt-12">
+            <section class="md:hidden">
+                <ion-icon onclick="onToggleMenu()" name="menu" class="text-3xl cursor-pointer"></ion-icon>
+            </section>
+            <section class="hidden md:flex justify-end items-center space-x-4">
+                <a href="home.html" class="hover:bg-green-100 px-4 py-2">Home</a>
+                <a href="about.html" class="hover:bg-green-100 px-4 py-2">About</a>
+                <a href="contact.html" class="hover:bg-green-100 px-4 py-2">Contact</a>
+                <a href="skill.html" class="hover:bg-green-100 px-4 py-2">Skill</a>
+                <a href="hobby.html" class="hover:bg-green-100 px-4 py-2">Hobby</a>
+            </section>
+            <section id="customMobileMenu" class="md:hidden hidden absolute bg-white max-h-48 w-full top-16 right-0 z-50">
+                <a href="home.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Home</a>
+                <a href="about.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">About</a>
+                <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact</a>
+                <a href="skill.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Skill</a>
+                <a href="hobby.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Hobby</a>
+            </section>
         </nav>
-
     </header>
+    
+    <script>
+        function onToggleMenu() {
+            const customMobileMenu = document.getElementById('customMobileMenu');
+            customMobileMenu.classList.toggle('hidden');
+    
+            const mainContent = document.querySelector('main');
+            mainContent.classList.toggle('menu-open');
+        }
+    </script>
+    
+    
 
-    <main>
-        <article>
-            <figure>
-                <img src="images/travel.jpg" alt="travel">
-                <figcaption><h4>travel</h4></figcaption>
-            </figure>
-            <p>yelabuga , it is a nice and historical place in russia i liked how lovely the peoples are ,and it is a small peaceful city.</p>
+    <main class="justify-center">
+        <section class="flex flex-col md:flex-row pl-10 mt-12 pt-12">
+            <section class="md:w-1/2 w-1/2 pl-12 justify-center" >
+                <article class="mb-8 md:mr-8 flex flex-col md:flex-row items-center md:pb-12">
+                    <figure class="hobby_fig mr-4">
+                        <img width=400 height=500 src="images/travel.jpg" alt="travel">
+                        <figcaption><h4 class="text-center">Travel</h4></figcaption>
+                    </figure>
+                    <p class="text-center">Yelabuga, it is a nice and historical place in Russia. I liked how lovely the people are, and it is a small peaceful city.</p>
+                </article>
+                
             
-            <figure>
-                <img src="images/bendy.jpg" alt="playing bendy">
-                <figcaption>playing bendy</figcaption>
+                <article class="mb-8  flex flex-col md:flex-row items-center pt-12 mt-12 pb-12 justify-center">
+                    <figure class="hobby_fig mr-4">
+                        <img width=400 height=500 src="images/bendy.jpg" alt="playing bendy">
+                        <figcaption><h4 class="text-center">Playing Bendy</h4></figcaption>
+                    </figure>
+                    <p class="text-center">I like playing games like tennis and football, but playing Bendy is my favorite.</p>
+                </article>
                 
-            </figure>
-            <p>i like playing games like tenis and football but playing bendy is my favorite.</p>
-        </article>
-        <article>
-            <figure>
-                <video src="images/dancing_with_friends.mp4" controls>
-                    <p>
-                      <a href="images/dancing_with_friends.mp4">dancing with friend</a> 
-                    </p>
-                  </video>
-                  
-                <figcaption><h4>picnic in yelabuga</h4></figcaption>
+            </section>
+            
+            <section class="md:w-1/2 w-1/2 pr-10 pl-12 pr12" >
+                <article class="mb-8 md:mr-8 flex flex-col md:flex-row items-center pl-10 pb-12 justify-center">
+                    <figure class="hobby_fig mr-4">
+                        <video  src="images/dancing_with_friends.mp4" controls class="w-full md:w-60">
+                            <p><a href="images/dancing_with_friends.mp4">Dancing with Friends</a></p>
+                        </video>
+                        <figcaption><h4 class="text-center">Picnic in Yelabuga</h4></figcaption>
+                    </figure>
+                    <p class="text-center">It was the day I met a lot of different types of people, and they were beautiful and supportive people.</p>
+                </article>
                 
-            </figure>
-            <p>it was the day i meet a lot of different type of people ,and they were beautiful and supportive people. </p>
-            <figure>
-                <video src="images/having_fun.mp4" controls>
-                    <p>
-                      <a href="images/having_fun.mp4">having fun</a>
-                    </p>
-                  </video>
-                  
-                <figcaption>cheli,russia</figcaption>
-            </figure>
-            <p>living the moment fully and making memories was the best day in my life.</p>
-        </article>
-        <audio src="images/gnossienne-1-erik-satie-175471.mp3" controls>
-        </audio>
-        <p>i love listening to classical music when i study and when i want to relax because it bring me sense of calm.</p>
-    </main>
-    <footer>
-        <section>
-            <h2>Follow me </h2>
-            <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram"></a>
-            <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram"></a>
-            <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp"></a>
+            
+                <article class="mb-8 md:ml-8 flex flex-col md:flex-row items-center md:mt-12 pb-12 justify-center">
+                    <figure class="hobby_fig mr-4 pt-12">
+                        <video src="images/having_fun.mp4" controls class="w-full md:w-48">
+                            <p><a href="images/having_fun.mp4">Having Fun</a></p>
+                        </video>
+                        <figcaption class="text-center">Cheli, Russia</figcaption>
+                    </figure>
+                    <p class="text-center">Living the moment fully and making memories was the best day of my life.</p>
+                </article>
+                
+            </section>
+            
         </section>
-        <section>
-            <h2>Contact me </h2>
-            <ul>
+        
+        
+        <section class="flex items-center justify-center pt-12 pb-12 mb-12">
+            <audio src="images/gnossienne-1-erik-satie-175471.mp3" controls>
+            </audio>
+        </section>
+        
+        <p class="text-center pd-10 pb-12 mb-12" >i love listening to classical music when i study and when i want to relax because it bring me sense of calm.</p>
+    </main>
+    <footer class="bg-gray-800 flex px-12 pb-9">
+        <section class="flex-1">
+            <h2 class="text-white text-xl pt-12">Follow me </h2>
+            <section class="flex pt-5">
+                <a href="https://t.me/lamrotibsa"><img class="flex-1 w-12 h-12 mr-3 rounded-t-full rounded-b-full" src="images/telegram_icon.jpg" alt="telegram"></a>
+                <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img class="flex-1 w-12 mr-3 h-12 rounded-t-full rounded-b-full" src="images/instagram_icon.jpg" alt="instagram"></a>
+                <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img class="flex-1 w-12 h-12 rounded-t-full rounded-b-full" src="images/whatsapp_icon.png" alt="whatsapp"></a>
+            </section>
+        </section>
+        <section class="flex-1 pt-12 pl-12 ml-12 ">
+            <h2 class="text-white text-xl">Contact me </h2>
+            <ul class="text-white pl-10 pt-5">
                 <li>
                     Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
                 </li>
