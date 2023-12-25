@@ -3,91 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
-    <header>
-        <img src="images/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li>
-                    <a href="hobby.html">Hobby</a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <section class="container">
+            <a class="navbar-brand me-auto" href="#">
+                <img  src="images/logo.jpg" alt="logo" width="200" >
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <section class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill.html">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobby.html">Hobby</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </nav>
 
     <main>
-        <h3>about my skills</h3>
-        <p>As a dedicated IT enthusiast, I am passionate about exploring a diverse array of subjects within the field. My journey 
-            encompasses a deep dive into databases, where I work using systems like
-             MySQL and PostgreSQL. Python serves as my versatile companion, allowing me to navigate through web development, 
-             data science, and the realms of algorithmic problem-solving with ease. Armed with a strong understanding of data 
-             structures and algorithms, I engage in platforms like LeetCode, honing my problem-solving skills. My exploration extends 
-             into the captivating world of data science, where I extract meaningful insights using Python libraries and statistical 
-             concepts. Web development is another facet of my expertise, blending front-end technologies like HTML, CSS, and JavaScript 
-             with powerful back-end frameworks such as Django and Flask. Networking knowledge adds another layer to my skill set, 
-             as I delve into the intricacies of protocols, network architecture, and security. This holistic approach to IT equips
-              me with a versatile skill set, positioning me to tackle complex challenges and contribute meaningfully to 
-              the ever-evolving landscape of technology.
-            </p>
-            <table>
-                <tr>
-                    <td>phyton</td>
-                    <td><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
-                </tr>
-                <tr>
-                    <td>data structure</td>
-                    <td><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
-                </tr>
-                <tr>
-                    <td>database</td>
-                    <td><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"></td>
-                </tr>
-                   
-                <tr>
-                    <td>web</td>
-                    <td><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
-                </tr>
-                <tr>
-                    <td>Networking</td>
-                    <td><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"></td>
-                </tr>
-
-            </table>
-
+        <section class="container mt-5">
+            <h3 class="text-center mb-3">about my skills</h3>
+            <p class="text-center">As a dedicated IT enthusiast, I am passionate about exploring a diverse array of subjects within the field. My journey 
+                encompasses a deep dive into databases, where I work using systems like
+                MySQL and PostgreSQL. Python serves as my versatile companion, allowing me to navigate through web development, 
+                data science, and the realms of algorithmic problem-solving with ease. Armed with a strong understanding of data 
+                structures and algorithms, I engage in platforms like LeetCode, honing my problem-solving skills. My exploration extends 
+                into the captivating world of data science, where I extract meaningful insights using Python libraries and statistical 
+                concepts. Web development is another facet of my expertise, blending front-end technologies like HTML, CSS, and JavaScript 
+                with powerful back-end frameworks such as Django and Flask. Networking knowledge adds another layer to my skill set, 
+                as I delve into the intricacies of protocols, network architecture, and security. This holistic approach to IT equips
+                me with a versatile skill set, positioning me to tackle complex challenges and contribute meaningfully to 
+                the ever-evolving landscape of technology.
+                </p>
+        </section>
+        <section class="container mt-5 mb-5 pb-3 pt-3">
+            <section class="row justify-content-center">
+                <section class="col-6">
+                    <table >
+                        <tr>
+                            <td>Phyton</td>
+                            <td class="d-flex"><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
+                        </tr>
+                        <tr>
+                            <td>Data structure</td>
+                            <td class="d-flex"><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
+                        </tr>
+                        <tr>
+                            <td>Database</td>
+                            <td class="d-flex"><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"></td>
+                        </tr>
+                           
+                        <tr>
+                            <td>Web</td>
+                            <td class="d-flex"><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"><img src="images/star.png" alt="star"></td>
+                        </tr>
+                        <tr>
+                            <td>Networking</td>
+                            <td class="d-flex"><img src="images/star.png" alt="star"> <img src="images/star.png" alt="star"></td>
+                        </tr>
+        
+                    </table>
+        
+                </section>
+                
+            </section>
+        </section>
+        
+            
     </main>
 
-    <footer>
-        <section>
-            <h2>Follow me </h2>
-            <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram"></a>
-            <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram"></a>
-            <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp"></a>
+    <footer class="bg-secondary text-white pt-3 pb-3">
+        <section class="container">
+            <section class="row">
+                <section class="col-6">
+                    <h2>Follow me </h2>
+                    <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram" width="64px" class="rounded-circle p-1"></a>
+                    <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram" width="64" class="p-1 rounded-circle"></a>
+                    <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp" width="64" class="p-1 rounded-circle"></a>
+                </section>
+                <section class="col-6 ">
+                    <h2>Contact me </h2>
+                    <ul>
+                        <li>
+                            Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
+                        </li>
+                        <li>
+                            Phone :+251983418977
+                        </li>
+                    </ul>
+                </section>
+            </section>
         </section>
-        <section>
-            <h2>Contact me </h2>
-            <ul>
-                <li>
-                    Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
-                </li>
-                <li>
-                    Phone :+251983418977
-                </li>
-            </ul>
-        </section>
+        
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/popper.min.js"></script>
 </body>
 </html>

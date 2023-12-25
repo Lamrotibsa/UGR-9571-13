@@ -3,59 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
-    <header>
-        <img src="images/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li>
-                    <a href="hobby.html">Hobby</a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <main>
-        <img src="images/photo2.jpg" alt="myPhoto">
-        <section>
-            <h1>Hi, I'am Lamrot Ibsa </h1>
-            <p>I'am software engineering student who is very interested in technology and problem solving. </p>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <section class="container">
+            <a class="navbar-brand me-auto" href="#">
+                <img  src="images/logo.jpg" alt="logo" width="200" >
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <section class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill.html">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobby.html">Hobby</a>
+                    </li>
+                </ul>
+            </section>
         </section>
+    </nav>
+    <main>
+        <section class="container mt-5 pt-2 mb-5 pb-3">
+            <section class="row">
+                <section class="col-md-6">
+                    <img src="images/photo2.jpg" alt="myPhoto" class="img-fluid" width="500">
+                </section>
+                <section class="col-md-6 text-center d-flex align-items-center">
+                    <section>
+                        <h1>Hi, I am Lamrot Ibsa</h1>
+                        <p>I am a software engineering student who is very interested in technology and problem-solving.</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+        
     </main>
 
-    <footer>
-        <section>
-            <h2>Follow me </h2>
-            <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram"></a>
-            <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram"></a>
-            <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp"></a>
+    <footer class="bg-secondary text-white pt-3 pb-3">
+        <section class="container">
+            <section class="row">
+                <section class="col-6">
+                    <h2>Follow me </h2>
+                    <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram" width="64px" class="rounded-circle p-1"></a>
+                    <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram" width="64" class="p-1 rounded-circle"></a>
+                    <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp" width="64" class="p-1 rounded-circle"></a>
+                </section>
+                <section class="col-6 ">
+                    <h2>Contact me </h2>
+                    <ul>
+                        <li>
+                            Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
+                        </li>
+                        <li>
+                            Phone :+251983418977
+                        </li>
+                    </ul>
+                </section>
+            </section>
         </section>
-        <section>
-            <h2>Contact me </h2>
-            <ul>
-                <li>
-                    Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
-                </li>
-                <li>
-                    Phone :+251983418977
-                </li>
-            </ul>
-        </section>
+        
     </footer>
-
+    <script src="js/bootstrap.bundle.min.js"></script>
+   
+    <script src="js/popper.min.js"></script>
 </body>
 </html>

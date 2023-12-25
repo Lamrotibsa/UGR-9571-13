@@ -3,73 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-</head>
-<body>
-    <header>
-        <img src="images/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li>
-                    <a href="hobby.html">Hobby</a>
-                </li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    </header>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <section class="container">
+            <a class="navbar-brand me-auto" href="#">
+                <img  src="images/logo.jpg" alt="logo" width="200" >
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <section class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill.html">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobby.html">Hobby</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </nav>
 
     <main>
-        <article>
-            <h2>Hey,it's lamrot</h2>
-
-            <p>I'am a third-year software engineering student at Addis Ababa University, I have a great passion for IT and technology and it has led me to
-                 gain interest in Python programming and web development. And , I find joy in coding and have 
-                 a particular affinity for crafting websites. </p>
-        </article>
-        <section>
-            <h2>educational background</h2>
-            <p>Born in Haramaya and I accomplished my highschool in haramaya University model school, my robust educational foundation reflects a lifelong passion for learning.
-                 From childhood, education has been a driving force in my life. I actively tackle challenges, evident in my adept 
-                 problem-solving skills showcased on platforms like LeetCode. Venturing beyond borders, I pursued an industrial
-                  programming course in Russia. Currently, my focus is on web development, particularly in mastering React. 
-                  These experiences underscore my commitment to ongoing learning and my ambition to contribute meaningfully to
-                   the intersection of education and technology.</p>
+        <section class="container mt-5">
+            <article class="text-center">
+                <h2 class="mb-3">Hey, it's Lamrot</h2>
+                <p class="mx-auto" style="max-width: 1200px;">
+                    I am a third-year software engineering student at Addis Ababa University. I have a great passion for IT and technology, 
+                    which has led me to gain interest in Python programming and web development. I find joy in coding and have a particular 
+                    affinity for crafting websites.
+                </p>
+            </article>
         </section>
-            <img src="images/book.jpg" alt="book">
-        <blockquote cite="Martin_Golding">Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
+    
+        <section >
+            <section class="container mt-5 pt-5 pb-5 mb-5">
+                <section class="row">
+                    <section class="col-md-6">
+                        <section>
+                            <h2 class="text-center mb-3">Educational Background</h2>
+                            <p>
+                                Born in Haramaya and I accomplished my high school at Haramaya University Model School. 
+                                My robust educational foundation reflects a lifelong passion for learning. From childhood, 
+                                education has been a driving force in my life. I actively tackle challenges, evident in my adept 
+                                problem-solving skills showcased on platforms like LeetCode. Venturing beyond borders, I pursued an 
+                                industrial programming course in Russia. Currently, my focus is on web development, particularly 
+                                in mastering React. These experiences underscore my commitment to ongoing learning and my ambition 
+                                to contribute meaningfully to the intersection of education and technology.
+                            </p>
+                        </section>
+                    </section>
+                    <section class="col-md-6">
+                        <img src="images/book.jpg" alt="book" class="img-fluid" width="500px">
+                    </section>
+                </section>
+            </section>
+        <blockquote  class="mb-5 pb-5 text-center" cite="Martin_Golding">"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live."
 
            </blockquote>
     </main>
 
-    <footer>
-        <section>
-            <h2>Follow me </h2>
-            <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram"></a>
-            <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram"></a>
-            <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp"></a>
+    <footer class="bg-secondary text-white pt-3 pb-3">
+        <section class="container">
+            <section class="row">
+                <section class="col-6">
+                    <h2>Follow me </h2>
+                    <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram" width="64px" class="rounded-circle p-1"></a>
+                    <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram" width="64" class="p-1 rounded-circle"></a>
+                    <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp" width="64" class="p-1 rounded-circle"></a>
+                </section>
+                <section class="col-6 ">
+                    <h2>Contact me </h2>
+                    <ul>
+                        <li>
+                            Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
+                        </li>
+                        <li>
+                            Phone :+251983418977
+                        </li>
+                    </ul>
+                </section>
+            </section>
         </section>
-        <section>
-            <h2>Contact me </h2>
-            <ul>
-                <li>
-                    Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
-                </li>
-                <li>
-                    Phone :+251983418977
-                </li>
-            </ul>
-        </section>
+        
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/popper.min.js"></script>
 </body>
 </html>

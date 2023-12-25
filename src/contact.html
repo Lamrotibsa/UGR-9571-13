@@ -3,76 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
 </head>
-<body>
-    <header>
-        <img src="images/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li>
-                    <a href="hobby.html">Hobby</a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-    <main>
-        <section>
-            <h2>Contact me </h2>
-            <ul>
-                <li>
-                    Email :lamrotibsa@gmail.com
-                </li>
-                <li>
-                    Phone :+251983418977
-                </li>
-            </ul>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <section class="container">
+            <a class="navbar-brand me-auto" href="#">
+                <img  src="images/logo.jpg" alt="logo" width="200" >
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <section class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill.html">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobby.html">Hobby</a>
+                    </li>
+                </ul>
+            </section>
         </section>
+    </nav>
+
+    <main>
+        
         <form>
-            <label>First Name: </label> 
-            <input type="text" id="fname"> 
-            <label>Last Name:</label> 
-            <input type="text" id="lname">
-            <label>Email:</label><br>
-            <input type="email">
-            <label>Phone Number:</label>
-            <input type="number" id="email">
-            <label>Message:</label>
-            <input type="text" id="message">
-            <input type="submit" value="Submit">
-            </form>
+            <section class="container mt-5 pt-5">
+                <section class="row">
+                    <section class="col-md-6">
+                        <section class="d-flex flex-column ">
+                            <label class="text-center mb-3 mt-2">First Name:</label>
+                            <input type="text" id="fname" class="form-control ">
+                            <label class="text-center mb-3 mt-2">Last Name:</label>
+                            <input type="text" id="lname" class="form-control">
+                        </section>
+                    </section>
+                    <section class="col-md-6 ">
+                        <section class="d-flex flex-column pl-5">
+                            <label class="text-center mb-3 mt-2">Email:</label>
+                            <input type="email" id="email" class="form-control">
+                            <label class="text-center mb-3 mt-2">Phone Number:</label>
+                            <input type="number" id="number" class="form-control">
+                        </section>
+                    </section>
+                </section>
+            </section>
+            
+            
+            <section class="container mt-5 pt-5">
+                <section class="row justify-content-center align-items-center">
+                  <section class="col-md-6">
+                    <section class="d-flex flex-column align-items-center">
+                      <label>Message:</label>
+                      <textarea cols="49" id="mess" rows="5" name="mes" class="form-control"></textarea>
+                      <input id="btn" type="submit" value="Submit" class="btn btn-primary mt-3 mb-5">
+                    </section>
+                </section>
+            </section>
+              </section>
+            
+        
+        </form>
     </main>
 
-    <footer>
-        <section>
-            <h2>Follow me </h2>
-            <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram"></a>
-            <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram"></a>
-            <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp"></a>
+    <footer class="bg-secondary text-white pt-3 pb-3">
+        <section class="container">
+            <section class="row">
+                <section class="col-6">
+                    <h2>Follow me </h2>
+                    <a href="https://t.me/lamrotibsa"><img src="images/telegram_icon.jpg" alt="telegram" width="64px" class="rounded-circle p-1"></a>
+                    <a href="https://instagram.com/lamrotibsa?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram_icon.jpg" alt="instagram" width="64" class="p-1 rounded-circle"></a>
+                    <a href="https://wa.me/qr/KHKMWIW6E5X6E1"><img src="images/whatsapp_icon.png" alt="whatsapp" width="64" class="p-1 rounded-circle"></a>
+                </section>
+                <section class="col-6 ">
+                    <h2>Contact me </h2>
+                    <ul>
+                        <li>
+                            Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
+                        </li>
+                        <li>
+                            Phone :+251983418977
+                        </li>
+                    </ul>
+                </section>
+            </section>
         </section>
-        <section>
-            <h2>Contact me </h2>
-            <ul>
-                <li>
-                    Email :<a href="mailto:lamrotibsa@gmail.com">lamrotibsa@gmail.com</a>
-                </li>
-                <li>
-                    Phone :+251983418977
-                </li>
-            </ul>
-        </section>
+        
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/popper.min.js"></script>
 </body>
 </html>
